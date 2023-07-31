@@ -12,6 +12,8 @@ for questions in question_data:
 
 quiz = QuizBrain(quizzes)
 
-answer = quiz.next_quiz()
+while quiz.still_has_quiz():
+    answer = quiz.next_quiz()
+
 
 print(answer)
